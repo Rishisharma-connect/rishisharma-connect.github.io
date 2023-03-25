@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Digital Myself</title>
-    <link rel="stylesheet" type="text/css" href="css/teststyle.css" />
-  </head>
-  <body>
-    <div class="header">Hello World</div>
-  </body>
+<head>
+<title>Rishi Sharma</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+}
+
+.header {
+  height: 100%;
+  background-color: #fff;
+}
+
+.main {
+  width: 500px;
+  margin: 0 auto;
+  background-color: #333;
+}
+
+.footer {
+  height: 100%;
+  background-color: #fff;
+}
+
+.animated {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>Rishi Sharma</h1>
+    </div>
+    <div class="main">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <p>Dolores reprehenderit voluptas beatae enim, enim iusto enim, enim iusto enim, enim iusto enim.</p>
+      <p>Quis assumenda sequi.</p>
+    </div>
+    <div class="footer">
+      <p>Copyright © 2023 Rishi Sharma</p>
+    </div>
+  </div>
+
+  <script>
+  window.addEventListener('keydown', function(event) {
+    event.keyCode === 82 ? event.preventDefault() : null;
+  });
+
+  window.addEventListener('click', function(event) {
+    event.target.animation.play();
+  });
+
+  function bounce() {
+    var el = document.getElementById('main');
+    el.style.animation.bounce();
+  }
+</script>
+</body>
 </html>
