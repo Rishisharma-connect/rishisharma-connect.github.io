@@ -15,11 +15,11 @@ Gem::Specification.new do |spec|
   }
 
   spec.metadata = {
-    "bug_tracker_uri"   => "https://github.com/cotes2020/jekyll-theme-chirpy/issues",
-    "documentation_uri" => "https://github.com/cotes2020/jekyll-theme-chirpy/#readme",
-    "homepage_uri"      => "https://cotes2020.github.io/chirpy-demo",
-    "source_code_uri"   => "https://github.com/cotes2020/jekyll-theme-chirpy",
-    "wiki_uri"          => "https://github.com/cotes2020/jekyll-theme-chirpy/wiki",
+    "bug_tracker_uri"   => "https://github.com/Rishisharma-connect/rishisharma-connect.github.io/issues",
+    "documentation_uri" => "https://github.com/Rishisharma-connect/rishisharma-connect.github.io/#readme",
+    "homepage_uri"      => "https://www.rishisharma.in",
+    "source_code_uri"   => "https://github.com/Rishisharma-connect/rishisharma-connect.github.io",
+    "wiki_uri"          => "https://github.com/Rishisharma-connect/rishisharma-connect.github.io/wiki",
     "plugin_type"       => "theme"
   }
 
