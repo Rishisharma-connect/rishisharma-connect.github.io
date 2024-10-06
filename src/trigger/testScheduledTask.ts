@@ -1,7 +1,7 @@
 import { logger, schedules, wait } from "@trigger.dev/sdk/v3";
 
-export const firstScheduledTask = schedules.task({
-  id: "first-scheduled-task",
+export const testScheduledTask = schedules.task({
+  id: "test-task",
   //every minute
   cron: "* * * * *",
   maxDuration: 360, // 5 minutes
