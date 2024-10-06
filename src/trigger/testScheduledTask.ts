@@ -23,6 +23,6 @@ export const testScheduledTask = schedules.task({
       timeZone: payload.timezone,
     });
 
-    logger.log("Hello I am running -" + formatted);
+    logger.log("Hello I am running integration -" + formatted);
   },
 });
