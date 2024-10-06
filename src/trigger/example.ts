@@ -4,7 +4,7 @@ export const firstScheduledTask = schedules.task({
   id: "first-scheduled-task",
   //every minute
   cron: "* * * * *",
-  maxDuration: 300, // 5 minutes
+  maxDuration: 360, // 5 minutes
   run: async (payload, { ctx }) => {
     // The payload contains the last run timestamp that you can use to check if this is the first run
     //  And calculate the time since the last run
