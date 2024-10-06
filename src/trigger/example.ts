@@ -7,7 +7,8 @@ export const firstScheduledTask = schedules.task({
   maxDuration: 300, // 5 minutes
   run: async (payload, { ctx }) => {
     // The payload contains the last run timestamp that you can use to check if this is the first run
-    // And calculate the time since the last run
+    //  And calculate the time since the last run
+
     const distanceInMs =
       payload.timestamp.getTime() -
       (payload.lastTimestamp ?? new Date()).getTime();
