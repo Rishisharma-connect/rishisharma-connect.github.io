@@ -1,7 +1,7 @@
 import { logger, schedules, wait } from "@trigger.dev/sdk/v3";
 
-export const firstScheduledTask = schedules.task({
-  id: "first-scheduled-task",
+export const testTrigger = schedules.task({
+  id: "test-trigger",
   //every minute
   cron: "* * * * *",
   maxDuration: 360, // 5 minutes
@@ -13,7 +13,7 @@ export const firstScheduledTask = schedules.task({
       payload.timestamp.getTime() -
       (payload.lastTimestamp ?? new Date()).getTime();
 
-    logger.log("First scheduled tasks", { payload, distanceInMs });
+    logger.log("testTrigger", { payload, distanceInMs });
 
     // Wait for 5 seconds
     await wait.for({ seconds: 5 });
