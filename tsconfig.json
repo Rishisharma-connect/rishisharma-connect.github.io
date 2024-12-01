@@ -28,6 +28,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "trigger.config.ts"
-  ],
+, "src/app/api/twilio/[.action.ts]"  ],
   "exclude": ["node_modules"]
 }
