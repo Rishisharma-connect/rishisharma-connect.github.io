@@ -19,6 +19,16 @@ const nextConfig = {
         }
       }),
     ],
+    images: {
+      remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: 'www.rishisharma.in',
+          port: '',
+          // pathname: '/account123/**',
+        },
+      ],
+    },
   },
   reactStrictMode: true,
   redirects,
