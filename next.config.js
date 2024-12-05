@@ -18,17 +18,13 @@ const nextConfig = {
           protocol: url.protocol.replace(':', ''),
         }
       }),
+      {
+        protocol: 'https',
+        hostname: 'www.rishisharma.in',
+        port: '',
+        // pathname: '/account123/**',
+      },
     ],
-    images: {
-      remotePatterns: [
-        {
-          protocol: 'https',
-          hostname: 'www.rishisharma.in',
-          port: '',
-          // pathname: '/account123/**',
-        },
-      ],
-    },
   },
   reactStrictMode: true,
   redirects,
